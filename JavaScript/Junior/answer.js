@@ -299,3 +299,5 @@ let v = 0111
 console.log(a.toString(2))
 console.log(v.toString(10))
 console.log(a & b)
+
+
