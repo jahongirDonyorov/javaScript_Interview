@@ -169,3 +169,133 @@
 
 // Interveuw da sizga masala bergan bulsa birdan masala yishishga shoshib ketmang 
 // birinchi intervuew olyotgan kishiga siz topgan yichim (qanday yichilishi)  haqaida aytib kiyin masalani ishlang 
+
+// 70 - test
+{
+  // Bitwise operatorlar kompyuter dasturlash va ma'lumotlar bilan ishlashda foydalaniladigan amallardir. 
+  // Bu operatorlar ma'lumotlar to'plamlari (bitlar) darajasidagi amallarni bajarish uchun ishlatiladi. 
+  // Bitlar, kompyuterda ma'lumotlarni kuzatishning eng kichik yegindisidir va 0 yoki 1 qiymatini olishi mumkin bo'lgan eng yomon komponentlardan biridir.
+
+  // Quyidagi bitwise operatorlar eng ko'p ishlatiladiganlaridan ba'zilari:
+
+  // AND (&): Har bir bitni ikkala ma'lumotlarning mos bitlari bilan solishtiradi. Agar ikki bit ham 1 bo'lsa, natija 1 bo'ladi; aks holda natija 0 bo'ladi.
+  // Agar u = 5 (0101) va v = 3 (0011) bo'lsa, u & v natijasi quyidagicha hisoblanadi:
+  // 0101   (u)
+  // & 0011   (v)
+  // ---------
+  // 0001   (Natija)
+  // Natija: 0001 (1)
+
+
+  // OR (|): Har bir bitni ikkala ma'lumotlarining bir yoki ikkalasi yoki  ularning ikkalasiga ham tegishli bo'lsa, natija 1 bo'ladi; aks holda natija 0 bo'ladi.
+  // Agar p = 5 (0101) va q = 3 (0011) bo'lsa, p | q natijasi quyidagicha hisoblanadi:
+  // 0101   (p)
+  // | 0011   (q)
+  // ---------
+  // 0111   (Natija)
+  // Natija: 0111 (7)
+
+
+  // XOR (^): Har bir bitni ikkala ma'lumotdan faqat bittasi 1 bo'lsa, natija 1 bo'ladi; aks holda natija 0 bo'ladi.
+  // Agar x = 5 (0101) va y = 3 (0011) bo'lsa, x ^ y natijasi quyidagicha hisoblanadi:
+  // 0101   (x)
+  // ^ 0011   (y)
+  // ---------
+  // 0110   (Natija)
+  // Natija: 0110 (6)
+
+  // NOT (~): Berilgan bitni o'zgartiradi: 0 ni 1 ga va 1 ni 0 ga aylantiradi.
+  // Agar z = 5 (0101) bo'lsa, ~z natijasi quyidagicha hisoblanadi:
+  // ~0101   (z)
+  // ---------
+  // 1010   (Natija)
+  // Natija: 1010 (-6, 2-komplement formatda)
+
+
+  // Shift operatorlari (<< va >>): Bitlarni bitta yoki bir nechta joylarga o'girish yoki chiqarish uchun ishlatiladi. << operatori bitlarni chapga, >> operatori esa o'ngga ko'chiradi.
+  // Agar m = 5 (0101) bo'lsa, m << 1 va m >> 1 operatsiyalari quyidagicha hisoblanadi:
+  // 0101   (m)
+  // << 1
+  // ---------
+  // 1010   (Natija)
+  // Natija: 1010 (10, bitta chapga o'girildi)
+
+
+  // Natija: 1010 (10, bitta chapga o'girildi)
+  // 0101   (m)
+  // >> 1
+  // ---------
+  // 0010   (Natija)
+  // Natija: 0010 (2, bitta o'ngga chiqarildi)
+
+  // Bitwise operatorlar ko'p joyda kriptografiyada, dasturlarni optimallashtirishda, ma'lumotlarni sifatli saqlashda va 
+  // boshqa yerdagi ma'lumotlar bilan ishlashda foydalaniladi. Bularni tushuntish uchun quyidagi misolga e'tibor bering:
+
+  // Agar a = 5 va b = 3 bo'lsa:
+
+  // a | b = 7; 
+  // a ^ b = 6
+  // ~a = -6 (Ushbu natija 2-komplement formatda hisoblanadi)
+  // a << 1 = 10 (bitta chapga o'girildi)
+  // b >> 1 = 1 (bitta o'ngga chiqarildi)
+
+  // Shuningdek, bitlarning kuzatish va o'rganishning asosiy qismi sifatida, amaliyotda qanday maqsadlar uchun foydalanishlarini tushuntirish muhim.
+
+  // Agar sizga "Bitwise operatorlar nima?" 
+  // deb so'ralsa, quyidagi tafsilotlar bilan javob bera olishingiz yaxshi bo'ladi
+  {
+    // Bitwise operatorlar, JavaScriptda ma'lumotlar to'plamlari (bitlar) darajasidagi amallarni bajarish uchun foydalaniladigan amallardir. Bu operatorlar ma'lumotlar to'plamini 0 (false) va 1 (true) qiymatlari bilan mantiqiy qarashda ishlaydigan xususiyatlardir. Bu ma'lumotlarni bitta bittaga solishtirish, moslashish va amallar bajarish uchun ishlatiladi.
+
+    // Quyidagi bitwise operatorlarni JavaScriptda foydalanishingiz mumkin:
+
+    // AND (&): Har bir bitni ikkala operandning mos bitlari bilan solishtiradi. Agar ikki bit ham 1 bo'lsa, natija 1 bo'ladi; aks holda natija 0 bo'ladi.
+
+    // OR (|): Har bir bitni ikkala operandning bir yoki ikkalasi yoki ham ularning ikkalasiga tegishli bo'lsa, natija 1 bo'ladi; aks holda natija 0 bo'ladi.
+
+    // XOR (^): Har bir bitni ikkala operanddan faqat bittasi 1 bo'lsa, natija 1 bo'ladi; aks holda natija 0 bo'ladi.
+
+    // NOT (~): Berilgan bitlarni o'zgartiradi: 0 ni 1 ga va 1 ni 0 ga aylantiradi.
+
+    // Shift operatorlari (<< va >>): Bitlarni bitta yoki bir nechta joylarga o'girish yoki chiqarish uchun ishlatiladi.
+
+    // Bitwise operatorlar, kriptografiya, dastur optimallashtirish, ma'lumotlarni sifatli saqlash va boshqa sohalarda foydalanishga imkon beradi.
+  }
+
+}
+
+// 71 - test 
+{
+const arr = [1, 2, 3];
+const MappedArr = arr.map(element => [element, element * 2]);
+// arr ichini map aylanganda [har bir elementni, va element * 2] ni chiqarsin deyapmiz
+
+console.log(MappedArr); // [ [ 1, 2 ], [ 2, 4 ], [ 3, 6 ] ]
+// value shu holatda chiqadi  arra ichidagi ichi array bulib chiqyapdi 
+// nistet (ichki) arraylarni arraydan chiqarish uchun .flat(),(1),(2) dan foydalanardik
+console.log(MappedArr.flat()) // [ 1, 2, 2, 4, 3, 6 ]
+
+// FlatMap bu ikkala methodening birlashgani hisoblanadi 
+// bu birdan arr ni map qilib harbir malumotni  oladi va chiqyotgan javobda ichki arraylar bulsa hammasini 
+// [] larini uchirib bitta array holiga keltiradi 
+
+const flatMapedArr = arr.flatMap(element => [element, element * 2])
+console.log(flatMapedArr) // [ 1, 2, 2, 4, 3, 6 ]
+
+// bu faqat array ichidagi birinchi arraylarni uchiradi [1,[2],3,[4]]
+// array [1,[2,[3]] [4]] bulsa bunga nevara hisoblangan [ididagi ichki 2] array larni uchirolmaydi
+// value [1,2,[3],4] yane array ichidagi 1-arraylarning ichki arraylarini uchirolmaydi 
+
+const Map = arr.map(element => [element, [element * 2]])
+console.log(Map) // [ [ 1, [ 2 ] ], [ 2, [ 4 ] ], [ 3, [ 6 ] ] ]
+
+// flatMap da qilganda
+const flatMap = arr.flatMap(element => [element, [element * 2]])
+console.log(flatMap) // [ 1, [ 2 ], 2, [ 4 ], 3, [ 6 ] ] - array ichidagi birinchi arraylarni uchirib beryapdi 
+
+}
+let a = 5
+let b = 3
+let v = 0111
+console.log(a.toString(2))
+console.log(v.toString(10))
+console.log(a & b)

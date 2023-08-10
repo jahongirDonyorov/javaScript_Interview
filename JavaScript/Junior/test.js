@@ -69,10 +69,10 @@
 // 65. IIFE // Immediately invoked function 
 // 66. Currying
 // 67. arr[1,2...,10] Juft sonli indexdagi qiymatlar yigi'ndisini top (indexsi juft bulgan sonlar)
-// 68. 
-// 69. 
-// 70. 
-// 71. 
+// 68. Optional chaining nma ? 
+// 69. Lexical Envirmonment nma ?
+// 70. Bitwise Operator ?
+// 71. FlatMap ?
 // 72. 
 // 73. 
 // 74. 
