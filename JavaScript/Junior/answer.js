@@ -65,6 +65,54 @@
   // new Set bulganda nmaga dubleketlarni chiqarib yuboradi
 }
 
+// 38 - test 
+{
+  // CRUD - bu arzon bajariladigan nufuzli dasturlash prinsiplaridan biri, yoki bir qator amallar to'plami,
+  // masalan, ma'lumotlarni boshqarish uchun. "CRUD" hariflari ingliz tili so'zlarining bosh hariflarini tashkil
+  // etadi: Create, Read, Update, va Delete.
+
+  // Create (Yaratish): Yangi ma'lumotni (yozuv, obyekt, qator) tuzish.
+  // Bu amalda ma'lumotlarni ma'lumotlar omboriga qo'shish yoki yaratishdan iborat.
+
+  // Read (O'qish): Ma'lumotni o'qish. Bu amalda ma'lumotlarni o'qish yoki qidirishdan iborat.
+
+  // Update (Yangilash): Ma'lumotni yangilash. Bu amalda mavjud ma'lumotni o'zgartirish yoki yangilashdan iborat.
+
+  // Delete (O'chirish): Ma'lumotni o'chirish. Bu amalda ma'lumotni o'chirishdan iborat.
+
+  // Bu prinsiplar dasturlashda, boshqaruv sistemalarda, veb saytlarda, mobil ilovalarda, 
+  // ma'lumotlar omborlarida va boshqa bir qancha sohalarda qo'llaniladi. Misol uchun, bir foydalanuvchi profili yaratish, 
+  // foydalanuvchining ma'lumotlarini ko'rish, foydalanuvchi profili ma'lumotlarini yangilash va foydalanuvchini tizimdan 
+  // o'chirish - bu CRUD amallariga misol bo'lishi mumkin.
+
+  // Misollar:
+
+  // Create (Yaratish):
+
+  // Yana bir foydalanuvchi ro'yxatga olish.
+  // Yangi tovar qo'shish internet do'konida.
+  // Yangi blog yozuvi tuzish.
+
+  // Read (O'qish):
+
+  // Foydalanuvchi profili ma'lumotlarini ko'rish.
+  // Obyektlar ro'yxatini ko'rish (masalan, telefon modellari).
+  // Blog yozuvlarini to'plu yig'ish va ko'rish.
+
+  // Update (Yangilash):
+
+  // Foydalanuvchi parolini o'zgartirish.
+  // Telefon raqamini yangilash.
+  // Blog yozuvi sarlavhasini o'zgartirish.
+
+  // Delete (O'chirish):
+  
+  // Foydalanuvchini tizimdan o'chirish.
+  // Tovarni do'kondan o'chirib tashlash.
+  // Blog yozuvini o'chirish.
+
+}
+
 // 39 - test 
 {
   // type Conversion bitta data turini ikkinchisiga (convert qilish) uzgartirishga aytiladi 
@@ -154,6 +202,89 @@
 // Qolgan 4 ta unchalik mashxur bo'lmaganlarini esa siz azizlarni o'zingizga qoldiraman. Postimiz uzun bo'lmasligi uchun ularni yozib o'tirmadim.
 }
 
+// 65 - test
+{
+  // IIFE - function ichidagi var function dan tashqaridaham 
+  // ishlaydi bu bizga quyidagi mumommolarni keltirishi mumkun 
+  // Misol: out verable blan scope verable nomi birhil bulsa valuesi bir biri blan almashib ketishi mumkun 
+
+
+  // var
+  var user = 10
+  console.log(user) // 10
+  function getUser () {
+    var user = 40 // bu ishlaganda out use ning qiymatini yangilab yuboradi
+    console.log(user) // 40 - hamma userning qiymati 40 ga teng buldi 
+    // oddiy qiymatni uzgartirish bulyapdi var scope dan tashqarida ishlaganligi uchun 
+  }
+  getUser()
+  console.log(user) // 40 - var global bulganligi uchun fnc ishlaganda user 10 {} ichidagi user 40 ga teng bulyapdi va qiymat 40 ga uzgaryapdi
+  // bizga jaob 10 bulish kerak edi lekn var global bulganligi uchun scope tashqarisidagi qiymatni scope ichida uzgartirib uni tashqarida yana ishlatsak buladi
+
+  // var da shunaqa holatlarda hatoliklar bulib turadi scope ichidagi verable blan tashqaridagini nomi birhil bulsa ikkalasi bittas verable hisoblanib ketadi 
+  // var da kod yozibham buni tugi'rlash mumkun buning uchun IIFE dan foydalanamiz 
+
+  // -=-=-=-=-= IIFE - immediately invoked function expression 
+
+  // tepadagi varda bulgan hatoni tug'irlashda ishlatiladi 
+
+  // biz functionni ()  ichiga olishimiz kerak buladi functionimiz nomiz expression function bulishi kerak 
+
+  var us = 10
+  // console.log(us)
+  // (function () {
+  //   var us = 30;
+  //   console.log(us)
+  // })() // 2 - () bu qavs bizga fnc ni chaqirish uchun  kerak buni nomi bulmaganligi uchun nomini yozib chaqirolmaymiz name(qilib)
+  // () buni ichida bulgandan kiyin var bulsaham uzining scope dan tashqarida ishlolmaydi 
+  console.log(us) // 10 chiqadi chunke fnc ishlagandaham uni ichidagi us faqat scope ichida ishlaydigan bulib qoladi 
+  // va scope dagi us out dagi us ni qiymatini uzgartirmaydi 
+
+  // varni Shu holatda scope dan tashqarida ishlamaydigan qilsak buladi 
+  // IIFE - deb shunda aytiladi 
+
+  // ChatGPT malumoti 
+  {
+
+    // IIFE, yoki "Immediately Invoked Function Expression," JavaScript dasturlash tilida 
+    // odatda ishlatiladigan bir funktsiyani ifoda sifatida yaratishning bir usuli. 
+    // Bu usul bilan funktsiyani tashkil etish va o'z ichida yaratish, shu sohada ishlatish va 
+    // natijada tushunishni osonlashtiradi.
+
+    // IIFE qisqa ko'rsatilganda, bu funktsiyani tashkil etish va bitta nechta 
+    // qadamlarni bitta ifoda ichida bajarishni anglatadi. 
+    // Bu, o'zgaruvchilar va funktsiyalar doimiy nomsiz bo'lishi va keng foydalanilmasi uchun 
+    // ma'lum bir doimiy kontekstga ega bo'lishi mumkinligini ta'minlayadi.
+
+    // Oddiy ko'rinishda IIFE quyidagicha ko'rsatilishi mumkin:
+
+    (function() {
+      // IIFE tarkibi
+      // Bu joyda kod yoziladi
+     })();
+
+    //  Bu quyidagi nuqtai nazarlarni o'z ichiga oladi:
+  
+    // 1. (function() {...}): Funktsiya ifodasi.
+    // 2. () oxiri: Shu qism ifodaning oxiri bo'lib, funktsiyani chaqirishni bildiradi.
+    // 3. Barcha IIFE kodini funktsiya ifodasi ichida yozish.
+
+    // Bu usulga misol:
+
+    (function() {
+      var x = 10;
+      var y = 20;
+      console.log(x + y);
+    })();
+
+    // Bu yerda, IIFE orqali x va y o'zgaruvchilari yaratiladi va ularni yig'indisini konsolga chiqaradi.
+    // IIFE lar, alohida funktsiya nusxalari yaratishga yoki ma'lumotlarni o'zgaruvchilar yordamida joylashtirishga kerak bo'lmagan, 
+    // lekin kodni murakkab ifodalardan tozalab olishga yordam berishi mumkin.
+  
+     }
+
+
+}
 
 // 67 - test 
 {
@@ -293,6 +424,93 @@ const flatMap = arr.flatMap(element => [element, [element * 2]])
 console.log(flatMap) // [ 1, [ 2 ], 2, [ 4 ], 3, [ 6 ] ] - array ichidagi birinchi arraylarni uchirib beryapdi 
 
 }
+
+// 72 - test 
+{
+  // Rekursiya, dasturlashda bir funksiyaning o'zini chaqirib yuborish konsepti hisoblanadi. 
+  // Bu, funksiya ichida o'zini qayta chaqirib yuborish imkonini beradi. 
+  // JavaScript dasturlash tilida rekursiv funksiyalar yaratish oson.
+
+  // Rekursiv funksiya quyidagi xususiyatlarni o'z ichiga oladi:
+
+  // 1. Base Case (Asosiy holat): Bu, rekursiv funksiyani to'xtatish uchun kerak bo'lgan shartni 
+  //    ifodalaydi. Agar bu shart bajarilmasa, funksiya o'zini qayta chaqiradi.
+
+  // 2. Recursive Case (Qayta chaqirish holati): Bu qismida funksiya o'zini o'z ichiga chaqiradi, 
+  //    lekin boshqa argumentlar bilan.Bu qismi bajarilgandan so'ng funksiya yana o'zini chaqirib yuboradi.
+
+  // Quyidagi misol JavaScript'da rekursiv funksiyani ifodalaydi. 
+  // Ushbu misolda faktorial hisoblaydigan rekursiv funksiya ko'rsatilgan:
+
+  function factorial(n) {
+    // Base case
+    if (n === 0) {
+      return 1;
+    }
+    
+    // Recursive case
+    return n * factorial(n - 1);
+  }
+  
+  console.log(factorial(5)); // Natija: 5 * 4 * 3 * 2 * 1 = 120
+
+  // Bu misolda factorial funksiyasi o'zini chaqirish orqali faktorialni hisoblayadi. 
+  // 5 faktoriali 5 * 4 * 3 * 2 * 1 = 120 ga teng.
+
+  // Rekursiv funksiyalar yaratishda ehtiyotkor bo'lish kerak, chunki boshqarishi qiyin bo'lishi mumkin.
+  // Har qanday rekursiv funksiya n ko'rsatkichlarida o'zini chaqirish natijasida "call stack" 
+  // ta'sir qilishi mumkin, va agar funksiya juda ko'p marta chaqirilsa, "stack overflow" 
+  // xatosi yuzaga kelishi mumkin.
+
+  // Siz rekursiv funksiyalarni yaxshi tushuntirib, ularni yaratishda va 
+  // qo'llab-quvvatlashda ehtiyotkor bo'lishingiz kerak.
+
+}
+
+
+
+// 84 - test
+{
+  // -=-=-=- Event Loop
+  // JavaScript codni tepadan psaga bittalab uqiydi
+  // cod uqish jarayonida kup vah olaydigan functionlar  ni kutib utirmaydi ularni web AP ga utkazadi va 
+  // uyirda berilgan vahtni tugatib brdan Call Stack ga utolmaydi u birinchi kutishga Callback Queue ga tushadi
+  // va uyirdan hamma sinxron code ishlab bulgandan kiyin call Stack ga utadi Shu jarayonga Event Loop deyiladi 
+
+  // Misol:
+  console.log(1)
+
+  setTimeout(()=> {
+    console.log(2)
+  },1000)
+
+  console.log(3)
+  // aslida javob 1,2,3 chiqish kerak edi bizga, lekn setTimeout asinxron bulganligi uchun uni uqimasdan Web AP ga yuboradi 
+  // uyirda berilgan vahtini tugatib kutishga Callback Queue ga tushadi endi bu hamma code ishlab bulgandan 
+  // kiyin navbati keladi va call Stack ga tushadi va 3 dan kiyin chiqadi. 
+  // value: 1,3,2 
+
+  // shu link orqali biz event loop qanday ishlashini ishlatib kurishimiz mumkun 
+  // http://latentflip.com/loupe/
+  // jarayon qanday bulishini yaqqol kurasiz 
+}
+
+
+
+
+
+
+// 140 - test 
+{
+  // ArrayBuffer bu uzunligi aniq bulgan bitelar qatori hisoblanadi  
+  // eleon qilish 
+  let buffer = new ArrayBuffer(4) // [00000000  00000000  00000000 00000000] - shu holatda buladi har bir bit da 8 ta bet buladi bizda 4 ta bit bor 
+  // elon qilingan paytda buning barcha betlari 0 ga teng buladi 
+
+}
+
+
+
 let a = 5
 let b = 3
 let v = 0111
@@ -300,4 +518,7 @@ console.log(a.toString(2))
 console.log(v.toString(10))
 console.log(a & b)
 
-
+// console.log('salom')
+// const x = '' || 1909 /
+// const x = '' && 1909 /
+// console.log(x)
