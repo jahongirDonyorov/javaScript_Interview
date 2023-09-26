@@ -1,5 +1,15 @@
 // JavaScript.info malumot olish uchun 
 
+// 4 - test 
+{
+  // clean code bu qilyotgan ishimizga qaram funtionlarga nom berishga aytiladi 
+  // function kurgan odam ichida nima yozilganligiga qaramasdan nomidan nima qilishini tushinishi kerak
+  //  -> 'get...' - return a value
+  //  -> 'calc...' - calculate smth 
+  //  -> 'check...' - check smth n return boolen 
+  //  -> camle case - getAge,showPrime, calcMath
+}
+
 // 26 - test
 {
   // // Garbage Collection butun ibj ni uzgartirganimizda faqat Stack dagi qismi uzgaradi 
@@ -63,6 +73,13 @@
 // 29 - test 
 {
   // new Set bulganda nmaga dubleketlarni chiqarib yuboradi
+}
+
+// 34 - test 
+{
+  // verable shadowed 
+  // out viriable s(cope dan tashqaridagi) veriable and inner virable (scope ichidagi verable)
+  // ikkalasining nomlari bir hil bulib qolsa bu holat shodow verable deyiladi 
 }
 
 // 38 - test 
@@ -467,7 +484,20 @@ console.log(flatMap) // [ 1, [ 2 ], 2, [ 4 ], 3, [ 6 ] ] - array ichidagi birinc
 
 }
 
+// 75 - test 
+{
+  // -=-=-=-=-=-=- Nullish ?? -> null, undefined
+// OR || -> false === null, undefined, 0, false, NaN
+// Nullish ?? -> false === null, undefined
 
+// huddi or || dek ishlaydi faqat bunda 2 ta false qiymat mavjud -> null, undefined
+
+// bu faqat null va undefined ni false db oladi qolgan hamma qiymatni true hisoblaydi xatto false ni uziham
+// false === undefined, null
+
+// faqat shu ikkalasini notug'ri qiymat db oladi va or kabi 1 ta true bulsa ushani chiqaradi
+
+}
 
 // 84 - test
 {

@@ -1,7 +1,7 @@
 // 1. Booleandagi operatorlar qaysilar? 
 // 2. JavaScriptdagi Data Typelar qaysilar?
 // 3. Number va BigInt farqi nimada?
-// 4. 
+// 4. clean code
 // 5. Undeclared, Undefined va Null o'rtasidagi farq nima?
 // 6. let, const va var farqi nima?
 // 7. "=", "==" va "===" operatorlari nima vazifa bajaradi?
@@ -32,9 +32,9 @@
 // 31. Symbol nma va nma vazifa bajaradi
 // 32. return blan va retun siz yozilgan function ni farqi?
 // 33. for loop, while, do while farqlari nmada?
-// 34. shadow verable nma ?
+// 34. shadawed verable nma ?
 // 35. functionlarni nechi hil usulda yaratda buladi?
-// 36.   haqida malumot bering
+// 36.  
 // 37. Obj ichidagi keylarni thes.key qilb chaqirganimiz blan obj.key qilib chaqirganimizni nma farqi bor
 // 38. CRUD nma
 // 39. Type Conversion nma ?
@@ -55,7 +55,7 @@
 // 54. new Set orqali arraydagi deblikate valuelarni olib tashlang va value ni array ga uzgartirirng
 // 55. this nma ?
 // 56. this body, obj, function, ichlarida yozilsa nmalar chiqadi. 
-// 57. this qanday functionlarda ishkamaydi va ularni ishlatish uchun nma qilish kerak.
+// 57. this qanday functionlarda ishlamaydi va ularni ishlatish uchun nma qilish kerak.
 // 58. this function ichida ishlatilganda tug'ri malumot chiqaishi uchun nma qilishimiz kerak 
 // 59. costructor function nma va qanday ishlaydi 
 // 60. .call(), .apply(), .bind()
@@ -154,9 +154,9 @@
 // 152. Cors ?
 // 153. Local Storage / Session Storage ?
 // 154. Cookies ?
-// 155. 
-// 156. 
-// 157. 
+// 155. HtmlCollection va NodeList farqi nima ?
+// 156. NodeList ga array methodlarini ishlatsak buladimi ? (push(), map()  , ...)
+// 157. innerHTML innerText vs textContent
 // 158. 
 // 159. 
 // 160. 
